@@ -10,7 +10,7 @@
 <html>
 
 <head>
-	<title>Details | Recruit</title>
+	<title>Details|Recruit</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -63,100 +63,28 @@
 					</ul> -->
 				</header>
 
-				<!-- Banner -->
-				<!-- <section id="banner">
-					<div class="content">
-						<header>
-							<h1>Recruit<br />
-							</h1>
-							<p>A Internship Cell @ DSCE</p>
-						</header>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi eveniet sed placeat totam
-							fugiat nulla corrupti, tempore ipsa vero quia odio magni ea maiores dolores debitis rem.
-							Magnam aspernatur, reiciendis cupiditate voluptatem, fuga neque facilis eos quae quidem eius
-							consequatur quos nemo et veritatis corrupti dolore debitis temporibus nobis a! Lorem ipsum
-							dolor sit amet consectetur adipisicing elit.</p>
-						<ul class="actions">
-							<li><a href="#" class="button big">Learn More</a></li>
-						</ul>
-					</div>
-					<span class="image object">
-						<img src="images/logo1.png" alt="logo" />
-					</span>
-				</section> -->
-
-				<!-- Section -->
-				<!-- <section>
-					<header class="major">
-						<h2>Features</h2>
-					</header>
-					<div class="features">
-						<article>
-							<span class="icon fa-gem"></span>
-							<div class="content">
-								<h3>Feature - 1</h3> -->
-				<!-- Best internships  -->
-				<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam exercitationem
-									laboriosam cum numquam adipisci modi, quidem tempora cumque quae. Lorem ipsum dolor
-									sit amet.</p> -->
-				<!-- </div>
-						</article>
-						<article>
-							<span class="icon solid fa-paper-plane"></span>
-							<div class="content">
-								<h3>Feature - 2</h3> -->
-				<!-- We keep touch with students and Updates -->
-				<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorum saepe enim
-									optio. Veritatis porro unde consequatur, perspiciatis esse qui quis repellat odit
-									voluptatem sequi?</p> -->
-				<!-- </div>
-						</article>
-						<article>
-							<span class="icon solid fa-rocket"></span>
-							<div class="content">
-								<h3>Feature - 3</h3> -->
-				<!-- Speed and most effective -->
-				<!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis quas, officiis
-									facilis consequatur fugiat itaque eum. Asperiores minus eos voluptate? Soluta!</p> -->
-				<!-- </div>
-						</article>
-						<article>
-							<span class="icon solid fa-signal"></span>
-							<div class="content">
-								<h3>Feature - 4</h3> -->
-				<!-- Networking -->
-				<!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam aut voluptatem
-									neque rem vel deserunt ullam enim nam amet nemo.</p> -->
-				<!-- </div>
-						</article>
-					</div>
-				</section> -->
-
-				<!-- Section -->
+		
+			
 				<section>
 					<header class="major text-center">
-						<h2>JP Morgan Chase and Co</h2>
+						<h2>{{that_internship.0.name}}</h2>
 					</header>
 					<div class="intimg text-center">
 						{% comment %} <img src="{% static 'images/logo1.png' %}" alt="logo" /> {% endcomment %}
-						<a href="#" class="image"><img style="width: 500px; height:300px;" src="{% static 'images/jpmc.jpeg' %}" alt="jpmc" /></a>
+						<a href="#" class="image"><img style="width: 500px; height:300px;" src="/media/{{that_internship.0.img}}" alt="{{that_internship.0.name}}" /></a>
 					</div>
 					<div class="deatils text-center">
-						<h3>Software Development Intern</h3>
-						<p>Rs <b>15000</b> per Month</p>
-						<p><b>6 Months</b> Duration</p>
+						<h3>{{that_internship.0.position}}</h3>
+						<p>Rs <b>{{that_internship.0.stipend}}</b> per Month</p>
+						<p><b>{{that_internship.0.duration}} Months</b> Duration</p>
 						<p><b>Work from home</b></p>
-						<p>Apply by <b>23rd Aug</b> </p>
+						<p>Hiring starts from <b>{{that_internship.0.date}}</b> </p>
 						<p>Part time allowed</p>
 					</div>
 					<hr>
-					<h4>About JP Morgan Chase and Co</h4>
+					<h4>{{that_internship.0.name}}</h4>
 					<div class="about_comp">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, consectetur pariatur perferendis
-						ipsam nostrum, dolorum doloremque fuga accusantium id a excepturi adipisci! Est alias fuga
-						voluptates, voluptatibus optio, eveniet incidunt odio eos nostrum saepe delectus atque quis qui
-						a minima? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, blanditiis. Lorem
-						ipsum dolor sit amet.
+						{{that_internship.0.desc}}
 					</div>
 					<hr>
 					<h4>About Internship</h4>
@@ -204,7 +132,7 @@
 						</ul>
 					</div>
 					<div class="btns dflex">
-						<a href="index.html" class="button">Back to Home</a>
+						<a href="/" class="button">Back to Home</a>
 						<a style="position: relative; left:600px;" href="resume.html" class="button text-right">Apply Now</a>
 					</div>
 					<!--  <div class="posts">
@@ -220,6 +148,25 @@
 						</article>
 					</div><br> -->
 				</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 				<div class="container">
 					<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
@@ -279,28 +226,28 @@
 						<h2>Menu</h2>
 					</header>
 					<ul>
-						<li><a href="index.html">Homepage</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="/">Homepage</a></li>
+						<li><a href="/accounts/about">About Us</a></li>
+						<li><a href="/accounts/info_me">Contact Us</a></li>
 						<li>
 							<span class="opener">Internships</span>
 							<ul>
-								<li><a href="internships.html">Full-Time</a></li>
-								<li><a href="internships.html">Part-Time</a></li>
-								<li><a href="internships.html">Remote</a></li>
-								<li><a href="internships.html">Mixed</a></li>
+								<li><a href="/view_all_internships">Full-Time</a></li>
+								<li><a href="/view_all_internships">Part-Time</a></li>
+								<li><a href="/view_all_internships">Remote</a></li>
+								<li><a href="/view_all_internships">Mixed</a></li>
 							</ul>
 						</li>
-						<li><a href="resume.html">Resume Creation</a></li>
+						<li><a href="/accounts/resume">Resume Creation</a></li>
 						<!-- <li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li> -->
 						<li>
 							<span class="opener">Categories</span>
 							<ul>
-								<li><a href="internships.html">IT Related</a></li>
-								<li><a href="internships.html">Electrical Related</a></li>
-								<li><a href="internships.html">Mechanical Related</a></li>
-								<li><a href="internships.html">Civil Related</a></li>
+								<li><a href="/view_all_internships">IT Related</a></li>
+								<li><a href="/view_all_internships">Electrical Related</a></li>
+								<li><a href="/view_all_internships">Mechanical Related</a></li>
+								<li><a href="/view_all_internships">Civil Related</a></li>
 							</ul>
 						</li>
 						<!-- <li><a href="#">Maximus Erat</a></li>
@@ -316,20 +263,20 @@
 					</header>
 					<div class="mini-posts">
 						<article>
-							<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="{% static 'images/pic07.jpg' %}" alt="" /></a>
+							<p>Aenean ornare velt lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="{% static 'images/pic08.jpg' %}" alt="" /></a>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="{% static 'images/pic09.jpg' %}" alt="" /></a>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 						</article>
 					</div>
 					<ul class="actions">
-						<li><a href="#" class="button">More</a></li>
+						<!-- <li><a href="#" class="button">More</a></li> -->
 					</ul>
 				</section>
 
@@ -358,7 +305,6 @@
 
 			</div>
 		</div>
-
 	</div>
 
 	<!-- Scripts -->

@@ -8,7 +8,7 @@
 <html>
 
 <head>
-	<title>Internships | Recruit</title>
+	<title>Internships|Recruit</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
@@ -142,7 +142,7 @@
 							<p>Stipend : Rs<b> {{company.stipend}} </b> per month</p>
 							<p> {{company.desc}} </p>
 							<ul class="actions">
-								<li><a href="detail_abt_internship.html" class="button">More</a></li>
+								<li><a href="detail_abt_internship/{{company.id}}" class="button">More</a></li>
 							</ul>
 						</article>
 						{% endfor %}
@@ -214,27 +214,26 @@
 					</header>
 					<ul>
 						<li><a href="/">Homepage</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="/accounts/about">About Us</a></li>
+						<li><a href="/accounts/info_me">Contact Us</a></li>
 						<li>
 							<span class="opener">Internships</span>
 							<ul>
-								<li><a href="view_all_internships">Full-Time</a></li>
-								<li><a href="view_all_internships">Part-Time</a></li>
-								<li><a href="view_all_internships">Remote</a></li>
-								<li><a href="view_all_internships">Mixed</a></li>
+								<li><a href="/view_all_internships">Full-Time</a></li>
+								<li><a href="/view_all_internships">Remote</a></li>
+								<li><a href="/view_all_internships">Mixed</a></li>
 							</ul>
 						</li>
-						<li><a href="resume.html">Resume Creation</a></li>
+						<li><a href="/accounts/resume">Resume Creation</a></li>
 						<!-- <li><a href="#">Etiam Dolore</a></li>
 										<li><a href="#">Adipiscing</a></li> -->
 						<li>
 							<span class="opener">Categories</span>
 							<ul>
-								<li><a href="view_all_internships">IT Related</a></li>
-								<li><a href="view_all_internships">Electrical Related</a></li>
-								<li><a href="view_all_internships">Mechanical Related</a></li>
-								<li><a href="view_all_internships">Civil Related</a></li>
+								<li><a href="/view_all_internships">IT Related</a></li>
+								<li><a href="/view_all_internships">Electrical Related</a></li>
+								<li><a href="/view_all_internships">Mechanical Related</a></li>
+								<li><a href="/view_all_internships">Civil Related</a></li>
 							</ul>
 						</li>
 						<!-- <li><a href="#">Maximus Erat</a></li>
@@ -244,37 +243,37 @@
 				</nav>
 
 				<!-- Section -->
-				<section>
+				<!-- <section>
 					<header class="major">
 						<h2>Top Achievers</h2>
 					</header>
 					<div class="mini-posts">
 						<article>
-							<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="{% static 'images/pic07.jpg' %}" alt="" /></a>
+							<p>Aenean ornare velt lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+						</article>
+						<article>
+							<a href="#" class="image"><img src="{% static 'images/pic08.jpg' %}" alt="" /></a>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 						</article>
 						<article>
-							<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-						</article>
-						<article>
-							<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+							<a href="#" class="image"><img src="{% static 'images/pic09.jpg' %}" alt="" /></a>
 							<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
 						</article>
 					</div>
 					<ul class="actions">
-						<li><a href="#" class="button">More</a></li>
+						 <li><a href="#" class="button">More</a></li> 
 					</ul>
-				</section>
+				</section> -->
 
 				<!-- Section -->
 				<section>
 					<header class="major">
 						<h2>Get in touch</h2>
 					</header>
-					<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem
-						ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-						tempus aliquam.</p>
+					<p>For any problem or queries,
+						please email us on  our website email or call  the  phone number below ,we will resolve any doubt there is</p>
+					
 					<ul class="contact">
 						<li class="icon solid fa-envelope"><a href="#">20beam031@dsce.edu.in</a></li>
 						<li class="icon solid fa-phone">+916362226060</li>
@@ -291,6 +290,7 @@
 				</footer>
 
 			</div>
+		</div>
 		</div>
 
 	</div>

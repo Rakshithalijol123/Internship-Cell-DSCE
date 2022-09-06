@@ -12,7 +12,10 @@ from .models import Internship
 
 def index(request):
     internships = Internship.objects.all()
-    return render(request,'index.html',{'internships':internships[:5]})
+    return render(request,'index.html',{'internships':internships[:4]})
+def detail_abt_internship(request,id):
+    that_internship = Internship.objects.filter(id=id)
+    return render(request,'detail_abt_internship.html',{'that_internship':that_internship})
 
 def view_all_internships(request):
     if request.user.is_authenticated:
