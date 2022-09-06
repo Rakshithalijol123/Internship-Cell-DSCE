@@ -63,7 +63,7 @@ def logout(request):
     auth.logout(request)
     return redirect('/')
 def inter(request):
-    # internships = Internship.objects.all()
+    internships = Internship.objects.all()
     return render(request,'detail_abt_internship.html')
 def info_me(request):
      if request.method == 'POST':
@@ -88,4 +88,6 @@ def info_me(request):
 def about(request):
     # internships = Internship.objects.all()
     return render(request,'about.html')
-    
+def resume(request):
+    # internships = Internship.objects.all()
+    return render(request,'resume.html')
