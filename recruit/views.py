@@ -35,7 +35,7 @@ def searchi(request):
         category = request.POST['category']
         all_internships = Internship.objects.all()
         if category:
-             all_internships = all_internships.filter(category = category)
+             all_internships = all_internships.filter(Q(category__icontains = category) | Q(name__icontains = category))
         context = {
             'all_internships':all_internships
             }
