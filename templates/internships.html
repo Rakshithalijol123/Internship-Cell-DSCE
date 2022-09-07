@@ -60,76 +60,7 @@
 						</li>
 					</ul> -->
 				</header>
-				<!-- Banner -->
-				<!-- <section id="banner">
-					<div class="content">
-						<header>
-							<h1>Recruit<br />
-							</h1>
-							<p>A Internship Cell @ DSCE</p>
-						</header>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi eveniet sed placeat totam
-							fugiat nulla corrupti, tempore ipsa vero quia odio magni ea maiores dolores debitis rem.
-							Magnam aspernatur, reiciendis cupiditate voluptatem, fuga neque facilis eos quae quidem eius
-							consequatur quos nemo et veritatis corrupti dolore debitis temporibus nobis a! Lorem ipsum
-							dolor sit amet consectetur adipisicing elit.</p>
-						<ul class="actions">
-							<li><a href="#" class="button big">Learn More</a></li>
-						</ul>
-					</div>
-					<span class="image object">
-						<img src="images/logo1.png" alt="logo" />
-					</span>
-				</section> -->
-
-				<!-- Section -->
-				<!-- <section>
-					<header class="major">
-						<h2>Features</h2>
-					</header>
-					<div class="features">
-						<article>
-							<span class="icon fa-gem"></span>
-							<div class="content">
-								<h3>Feature - 1</h3> -->
-								<!-- Best internships  -->
-								<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ipsam exercitationem
-									laboriosam cum numquam adipisci modi, quidem tempora cumque quae. Lorem ipsum dolor
-									sit amet.</p> -->
-							<!-- </div>
-						</article>
-						<article>
-							<span class="icon solid fa-paper-plane"></span>
-							<div class="content">
-								<h3>Feature - 2</h3> -->
-								<!-- We keep touch with students and Updates -->
-								<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolorum saepe enim
-									optio. Veritatis porro unde consequatur, perspiciatis esse qui quis repellat odit
-									voluptatem sequi?</p> -->
-							<!-- </div>
-						</article>
-						<article>
-							<span class="icon solid fa-rocket"></span>
-							<div class="content">
-								<h3>Feature - 3</h3> -->
-								<!-- Speed and most effective -->
-								<!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor omnis quas, officiis
-									facilis consequatur fugiat itaque eum. Asperiores minus eos voluptate? Soluta!</p> -->
-							<!-- </div>
-						</article>
-						<article>
-							<span class="icon solid fa-signal"></span>
-							<div class="content">
-								<h3>Feature - 4</h3> -->
-								<!-- Networking -->
-								<!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam aut voluptatem
-									neque rem vel deserunt ullam enim nam amet nemo.</p> -->
-							<!-- </div>
-						</article>
-					</div>
-				</section> -->
-
-				<!-- Section -->
+				
 				<section>
 					<header class="major text-center">
 						<h2>Top Internship Companies</h2>
@@ -137,6 +68,7 @@
 					<div class="posts">
 						{% for company in all_internships %}
 						<article>
+							<h3>{{company.category}}</h3>
 							<a href="#" class="image"><img src="/media/{{company.img}}" alt="" /></a>
 							<h3> {{company.name}} </h3>
 							<p>Stipend : Rs<b> {{company.stipend}} </b> per month</p>
@@ -145,6 +77,8 @@
 								<li><a href="detail_abt_internship/{{company.id}}" class="button">More</a></li>
 							</ul>
 						</article>
+						{% empty %}
+						<h1>Data not found</h1>
 						{% endfor %}
 					</div><br>
 					<!-- <ul class="text-center actions">

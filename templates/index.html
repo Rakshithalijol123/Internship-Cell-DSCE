@@ -160,6 +160,7 @@
 					<div class="posts">
 						{% for internship in internships %}
 						<article>
+							<h3>{{internship.category}}</h3>
 							<a href="#" class="image"><img src="/media/{{internship.img}}" alt="" /></a>
 							<h3> {{internship.name}} </h3>
 							<p>Stipend : Rs<b> {{internship.stipend}} </b> per month</p>
@@ -242,8 +243,9 @@
 
 				<!-- Search -->
 				<section id="search" class="alt">
-					<form method="post" action="#">
-						<input type="text" name="query" id="query" placeholder="Search" />
+					<form method="post" action="/searchi">
+						{% csrf_token %}
+						<input type="text"id="category" name="category" placeholder="Search" value="{{category}}"/>
 					</form>
 				</section>
 
