@@ -160,7 +160,6 @@
 					<div class="posts">
 						{% for internship in internships %}
 						<article>
-							<h3>{{internship.category}}</h3>
 							<a href="#" class="image"><img src="/media/{{internship.img}}" alt="" /></a>
 							<h3> {{internship.name}} </h3>
 							<p>Stipend : Rs<b> {{internship.stipend}} </b> per month</p>
@@ -273,9 +272,9 @@
 						<li>
 							<span class="opener">Categories</span>
 							<ul>
-								<li><a href="view_all_internships">IT Related</a></li>
-								<li><a href="view_all_internships">Electrical Related</a></li>
-								<li><a href="view_all_internships">Mechanical Related</a></li>
+								<li><a href="IT_cat">IT Related</a></li>
+								<li><a href="Ece_cat">Electrical Related</a></li>
+								<li><a href="Mech_cat">Mechanical Related</a></li>
 								<li><a href="view_all_internships">Civil Related</a></li>
 							</ul>
 						</li>

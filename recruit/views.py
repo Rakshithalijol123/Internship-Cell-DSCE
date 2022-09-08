@@ -45,5 +45,44 @@ def searchi(request):
         
 
 
+def IT_cat(request):
+    if request.user.is_authenticated:
+        all_internships = Internship.objects.all()
+        all_internships = Internship.objects.filter(Q(category__icontains="IT"))
+        return render(request,'internships.html',{'all_internships':all_internships})
+    else:
+        return redirect('login')
 
+
+def Mech_cat(request):
+    if request.user.is_authenticated:
+        all_internships = Internship.objects.all()
+        all_internships = Internship.objects.filter(Q(category__icontains="Core mechanical"))
+
+        
+        return render(request,'internships.html',{'all_internships':all_internships})
+    else:
+        return redirect('login')
+    
+
+def Ece_cat(request):
+    if request.user.is_authenticated:
+          all_internships = Internship.objects.all()
+          all_internships = Internship.objects.filter(Q(category__icontains="analyst"))
+          return render(request,'internships.html',{'all_internships':all_internships})
+
+        
+        
+    
+    else:
+         return redirect('login')
+       
+    
+
+def Mrk_cat(request):
+    if request.user.is_authenticated:
+        mrkt_internships = Internship.objects.filter(category="Marketing")
+        return render(request,'internships.html',{'mrkt_internships':mrkt_internships})
+    else:
+        return redirect('login')
         

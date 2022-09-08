@@ -23,6 +23,10 @@ from . import views
 urlpatterns = [
      path('', views.index,name="index"),
      path('searchi', views.searchi,name="searchi"),
+    path('IT_cat',views.IT_cat,name='IT_cat'),
+    path('Mech_cat',views.Mech_cat,name='Mech_cat'),
+    path('Ece_cat',views.Ece_cat,name='Ece_cat'),
+    path('Mrk_cat',views.Mrk_cat,name='Mrk_cat'),
      path('detail_abt_internship/<int:id>/',views.detail_abt_internship,name='detail_abt_internship'),
 
      
