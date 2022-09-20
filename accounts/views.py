@@ -63,7 +63,7 @@ def logout(request):
     return redirect('/')
 def inter(request):
 #    internships = Internship.objects.all()
-   return render(request,'detail_abt_internship.html')
+   return render(request,'congrats.html')
 def info_me(request):
     if request.user.is_authenticated:
         if request.method == 'POST':
