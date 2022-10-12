@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'intershipcell.wsgi.application'
 DATABASES = {
      'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'internshipCell',
+        'NAME': 'internshipcell',
         'USER' : 'postgres',
-        'PASSWORD': 'Rakshit@123#',
+        'PASSWORD': '1234',
         'HOST': 'localhost'
     }
 }
